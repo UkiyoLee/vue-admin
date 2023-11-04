@@ -1,46 +1,22 @@
-# vue-admin
+# Vue Admin 项目简介（前端部分）
 
-This template should help get you started developing with Vue 3 in Vite.
+一个基于 `Vue 3` 和 `Vite` 的基础后台管理系统
 
-## Recommended IDE Setup
+## 项目简介
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+本项目是由 `@UkiyoLee` 受到成熟的管理系统 `el-admin` 启发，使用 `Vue 3` 和 `Vite` 搭建的后台管理系统，旨在从代码层面上提升开发效率，降低开发成本，并且在 `el-admin` 的基础上，加入了新的功能，旨在让后台管理系统更加灵活，更加易于开发。
 
-## Type Support for `.vue` Imports in TS
+## 项目预览
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin) to make the TypeScript language service aware of `.vue` types.
+![preview](./preview.png)
 
-If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has also implemented a [Take Over Mode](https://github.com/johnsoncodehk/volar/discussions/471#discussioncomment-1361669) that is more performant. You can enable it by the following steps:
+## 项目特性
 
-1. Disable the built-in TypeScript Extension
-    1) Run `Extensions: Show Built-in Extensions` from VSCode's command palette
-    2) Find `TypeScript and JavaScript Language Features`, right click and select `Disable (Workspace)`
-2. Reload the VSCode window by running `Developer: Reload Window` from the command palette.
+与 `el-admin` 相比，`Vue Admin` 具有以下特性：
 
-## Customize configuration
+- 不支持 `Vue 2`，`Vue 2` 基本已停止支持与维护，为便于项目的开发和维护，本项目将基于 截至项目启动其最新版本的 `Vue 3` 开发
+- 为保证代码的易读性与可维护性，支持 `TypeScript` 并将其作为主要开发语言，所有的组件以及功能均基于 `TypeScript` 开发，当然，本项目支持使用 `JavaScript` 开发，但为保证项目便于维护，不建议这么做
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+- 本项目并不基于传统的 `Webpack` 进行构建与管理，而是使用 `Vite` 作为构建工具，基于 `Vite` 的特性，本项目也支持使用 `Webpack` 插件
 
-## Project Setup
-
-```sh
-npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Type-Check, Compile and Minify for Production
-
-```sh
-npm run build
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
-```
+- 为尽可能发挥 `Vue 3` 语法特性，对于小型组件，本项目采用 `选项式 API` 进行开发，对于大型组件，而是采用 `组合式 API` 进行开发

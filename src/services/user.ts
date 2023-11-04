@@ -1,6 +1,6 @@
 import request from "@/configs/request";
-import type { BaseResponse } from "@/models/global";
-import type { UserLoginRequest, UserRegisterRequest, UserVO } from "@/models/user";
+import type { BaseResponse, PageRequest } from "@/models/global";
+import type { UserLoginRequest, UserQueryRequest, UserRegisterRequest, UserVO } from "@/models/user";
 
 /**
  * 用户注册
@@ -29,7 +29,9 @@ export async function userLogin(params: UserLoginRequest) {
 /// region 增删改查
 
 export async function listUserByPage() {
-  
+  return request.get<BaseResponse<UserQueryRequest>>('/user/list', {
+    data: {}
+  });
 }
 
 export async function getUserById(id: number) {
