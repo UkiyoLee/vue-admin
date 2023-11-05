@@ -11,3 +11,7 @@ export function rsa(original: string, publicKey?: string) {
 export function md5(original: string, salt?: string) {
   return md5encrypt((salt ?? SALT) + original);
 }
+
+export default function encrypt(original: string, salt?: string, publicKey?: string) {
+  return rsa(md5(original, salt ?? SALT), publicKey ?? PUBLIC_KEY);
+}

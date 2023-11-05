@@ -3,6 +3,7 @@
 </template>
 
 <script setup lang="ts">
+import { mapState } from 'pinia';
 import { computed } from 'vue';
 </script>
 
