@@ -1,3 +1,3 @@
-export const PUBLIC_KEY = 'MFwwDQYJKoZIhvcNAQEBBQADSwAwSAJBANL378k3RiZHWx5AfJqdH9xRNBmD9wGD\n' + '2iRe41HdTNF8RUhNnHit5NpMNtGL0NPTSSpPjjI1kJfVorRvaQerUgkCAwEAAQ==';
+export const PUBLIC_KEY: string = "";
 
-export const SALT = 'ukiyo';
+export const SALT: string = "ukiyo";
